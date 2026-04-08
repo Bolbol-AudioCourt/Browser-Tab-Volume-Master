@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Volume Master</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <main class="popup-shell">
+      <section class="volume-panel">
+        <div
+          id="volumeKnob"
+          class="knob"
+          role="slider"
+          tabindex="0"
+          aria-label="Tab volume"
+          aria-valuemin="0"
+          aria-valuemax="400"
+          aria-valuenow="100"
+        >
+          <div class="knob-face">
+            <div class="knob-indicator"></div>
+            <div class="knob-center"></div>
+          </div>
+        </div>
+
+        <div class="volume-meta">
+          <span class="value-label">Volume</span>
+          <strong id="volumeValue">100%</strong>
+          <span class="value-hint">double-click to reset</span>
+        </div>
+      </section>
+
+      <button id="eqToggle" class="eq-toggle" type="button" aria-expanded="false">
+        4-band EQ
+      </button>
+
+      <section id="eqPanel" class="eq-panel" hidden>
+        <canvas id="eqCanvas" width="320" height="180" aria-label="Equalizer curve"></canvas>
+      </section>
+    </main>
+
+    <script src="popup.js"></script>
+  </body>
+</html>

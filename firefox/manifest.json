@@ -1,0 +1,42 @@
+{
+  "manifest_version": 3,
+  "name": "Volume Master",
+  "description": "Control the current tab volume from 0% to 400% with a 4-band EQ.",
+  "version": "1.0.0",
+  "permissions": [
+    "tabs",
+    "activeTab",
+    "storage"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "action": {
+    "default_title": "Volume Master",
+    "default_popup": "popup/popup.html",
+    "default_icon": {
+      "48": "content/icon.png",
+      "96": "content/icon.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "content/audio-engine.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "volume-master@kry.studio"
+    }
+  },
+  "icons": {
+    "48": "content/icon.png",
+    "96": "content/icon.png"
+  }
+}
