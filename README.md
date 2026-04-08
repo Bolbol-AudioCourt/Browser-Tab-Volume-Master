@@ -2,6 +2,8 @@
 
 A browser extension that lets you control the current tab’s volume and EQ.
 
+![Volume Master screenshot](screenshot.png)
+
 ## Download
 [Download ZIP](https://github.com/Bolbol-AudioCourt/Browser-Tab-Volume-Master/archive/refs/heads/main.zip)
 
