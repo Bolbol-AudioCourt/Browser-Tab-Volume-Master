@@ -2,16 +2,21 @@
 
 A browser extension that lets you control the current tab’s volume and EQ.
 
-## Install in Firefox
-1. Open Firefox.
-2. Go to `about:debugging#/runtime/this-firefox`
-3. Click **Load Temporary Add-on...**
-4. Open the `firefox` folder.
-5. Select `manifest.json`
+## Download
+[Download ZIP](https://github.com/Bolbol-AudioCourt/Browser-Tab-Volume-Master/archive/refs/heads/main.zip)
 
-## Install in Chrome
-1. Open Chrome.
-2. Go to `chrome://extensions`
-3. Turn on **Developer mode**
-4. Click **Load unpacked**
-5. Select the `chrome` folder.
+## Firefox
+1. Download and unzip the project.
+2. Open Firefox.
+3. Go to `about:debugging#/runtime/this-firefox`
+4. Click **Load Temporary Add-on...**
+5. Open the `firefox` folder.
+6. Select `manifest.json`
+
+## Chrome
+1. Download and unzip the project.
+2. Open Chrome.
+3. Go to `chrome://extensions`
+4. Turn on **Developer mode**
+5. Click **Load unpacked**
+6. Select the `chrome` folder.
